@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.mjs" type="module"></script>
+</head>
+
+<body>
+  <form>
+    <div class="mb-3">
+      <label for="gene" class="form-label">Select Gene</label>
+      <select class="form-control" id="gene">
+        <option value="AGTC">AGTC</option>
+        <option value="TCGA">TCGA</option>
+        <option value="AATC">AATC</option>
+        <option value="CGTA">CGTA</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="sequence" class="form-label">Enter DNA Sequence</label>
+      <input type="text" class="form-control" id="sequence" aria-describedby="sequenceHelp"
+        placeholder="Enter sequence like GTACAAATCTTGCC">
+    </div>
+    <button type="submit" class="btn btn-primary" id="submit">Find Sequence</button>
+    <button type="button" class="btn btn-secondary" id="show-location">Show Location</button>
+  </form>
+  <div id="result"></div>
+  <div id="location" class="mt-3"></div>
+</body>
+
+</html>
